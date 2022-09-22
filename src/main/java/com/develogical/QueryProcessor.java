@@ -26,7 +26,7 @@ public class QueryProcessor {
             int index = 0;
             for (int i=parts.length-1; i < parts.length; i--){
                 try {
-                    int num = Integer.parseInt(parts[i])
+                    int num = Integer.parseInt(parts[i]);
                     int_array[index] = num;
                     index++;
                 }
