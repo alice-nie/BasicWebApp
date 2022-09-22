@@ -1,4 +1,5 @@
 package com.develogical;
+import java.lang.*;
 
 public class QueryProcessor {
 
@@ -12,7 +13,35 @@ public class QueryProcessor {
             return "deserves better";
         }
         if (query.toLowerCase().contains("what is your name")) {
-            return "Team ASA";
+            return "ASA";
+        }
+
+        if (query.toLowerCase().contains("which of the following numbers is the largest")) {
+
+            String[] parts = query.replace(",", " ");
+            parts = query.replace(":", " ");
+            parts = query.split(" ");
+
+            int[] int_array = new int[parts.length];
+            int index = 0;
+            for (int i=parts.length-1; i < parts.length; i--){
+                try {
+                    int num = parseInt(parts[i]);
+                    int_array[index] = num;
+                    index++;
+                }
+                catch (NumberFormatException e){
+                    break;
+                }
+            
+            }
+            int maxVal = int_array[0];
+            for (int i = 0; i < int_array.length; i++) {
+                maxVal = Math.max(maxVal, int_array[i]);
+            }
+
+            return maxVal.toString();
+
         }
         return "";
     }
