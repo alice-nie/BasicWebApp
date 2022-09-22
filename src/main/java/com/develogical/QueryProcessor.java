@@ -22,7 +22,7 @@ public class QueryProcessor {
             parts = input.replace(":", " ");
             parts = input.split(" ");
 
-            Int[] int_array = new int[parts.length];
+            int[] int_array = new int[parts.length];
             int index = 0;
             for (int i=parts.length-1; i < parts.length; i--){
                 try {
