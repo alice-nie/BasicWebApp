@@ -33,8 +33,15 @@ public class QueryProcessor {
                 catch (NumberFormatException e){
                     break;
                 }
-            return Math.max(int_array);
+            
             }
+            int maxVal = int_array[0];
+            for (int i = 0; i < int_array.length; i++) {
+                maxVal = Math.max(maxVal, int_array[i]);
+            }
+
+            return maxVal;
+
         }
         return "";
     }
