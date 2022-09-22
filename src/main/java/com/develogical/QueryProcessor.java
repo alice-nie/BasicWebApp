@@ -18,9 +18,9 @@ public class QueryProcessor {
 
         if (query.toLowerCase().contains("which of the following numbers is the largest")) {
 
-            String[] parts = input.replace(",", " ");
-            parts = input.replace(":", " ");
-            parts = input.split(" ");
+            String[] parts = query.replace(",", " ");
+            parts = query.replace(":", " ");
+            parts = query.split(" ");
 
             int[] int_array = new int[parts.length];
             int index = 0;
