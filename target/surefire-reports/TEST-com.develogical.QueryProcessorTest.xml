@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="com.develogical.QueryProcessorTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.develogical.QueryProcessorTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.2.1+0"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/alicenie/desktop/programming/17313/BasicWebApp"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/alicenie/Desktop/programming/17313/BasicWebApp"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -41,7 +41,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -64,5 +64,6 @@
   </properties>
   <testcase classname="com.develogical.QueryProcessorTest" name="returnsEmptyStringIfCannotProcessQuery" time="0.003"/>
   <testcase classname="com.develogical.QueryProcessorTest" name="isNotCaseSensitive" time="0"/>
+  <testcase classname="com.develogical.QueryProcessorTest" name="knowsTeamName" time="0"/>
   <testcase classname="com.develogical.QueryProcessorTest" name="knowsAboutShakespeare" time="0"/>
 </testsuite>
