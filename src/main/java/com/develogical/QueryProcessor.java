@@ -34,6 +34,7 @@ public class QueryProcessor {
                     break;
                 }
             return Math.max(int_array);
+            }
         }
         return "";
     }
