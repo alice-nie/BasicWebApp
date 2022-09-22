@@ -40,7 +40,7 @@ public class QueryProcessor {
                 maxVal = Math.max(maxVal, int_array[i]);
             }
 
-            return maxVal;
+            return maxVal.toString();
 
         }
         return "";
